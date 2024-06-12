@@ -38,6 +38,8 @@ my_range = range(5, 20)
 
 selected_range = my_range[2:6]
 preffered_number = my_range[8] *2
+concate_items = (f"{selected_range}, these two numbers were selected the 3rd and 6th positions a range between 5 and 20")
+print(concate_items)
 print(selected_range)
 print(preffered_number)
 for item in my_range:
