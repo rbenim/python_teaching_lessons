@@ -27,6 +27,11 @@ for char in my_string:
     print(char)
 
 
+#membership_testing
+print("yaa" in my_string)
+print("H" in my_string)
+
+
 #DATA STRUCTURE IN PYTHON.............................
 
 
