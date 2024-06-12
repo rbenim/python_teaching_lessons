@@ -7,6 +7,13 @@ elif n < 0:
 else:
  print("n is zero");
 
+
 users = {"ama" , "kofi", "yaw" , "kila nkuto"}
-new_user = users.add("Jack Chan")
-print(users)
+users.add("Jack Chan")
+users.add("kwame")
+login_cred = input("Username:")
+
+if login_cred in users:
+   print(f"user's credential is legit this is the list of {users}")
+else:
+   print("user is fake")
