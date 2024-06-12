@@ -33,6 +33,28 @@ substring = my_string[0:5]  # 'Hello'
 for char in my_string:
     print(char)
 
+
+
+
+
+#difference between tuple and list
+#list is enclosed in brackets [] and  turples in square brackets ()
+# list can be modifield but not turples. examples
+
+#list
+my_list = [1, 2, 3, 4, 5, "and", 6]
+
+#modification
+modified_list_item = my_list[2] = "two"
+print(modified_list_item)
+
+#turple. this turple can not be modified
+my_turple = (1, 2, 3, 4, 5, "and", 6)
+print(my_turple)
+
+
+
+
 #range
 my_range = range(5, 20)
 
