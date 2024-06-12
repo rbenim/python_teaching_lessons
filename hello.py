@@ -3,14 +3,7 @@
 name = input("Name: ")
 print(f"Hello, {name}");
 
-#conditions
-n = int(input("Number: "))
-if n > 0:
-    print("n is positive")
-elif n < 0:
-    print("n is negative")
-else:
- print("n is zero");
+
 
  #Sequence. selecting a sprcific letter in a
 names = input("Names: ")
@@ -34,7 +27,7 @@ for char in my_string:
     print(char)
 
 
-
+#DATA STRUCTURE IN PYTHON.............................
 
 
 #difference between tuple and list
@@ -43,6 +36,9 @@ for char in my_string:
 
 #list
 my_list = [1, 2, 3, 4, 5, "and", 6]
+
+#sort list
+sort_list = my_list.sort
 
 #modification
 modified_list_item = my_list[2] = "two"
@@ -71,3 +67,50 @@ for item in my_range:
 #length   
 range_length = len(my_range)
 print(f"Range length is {range_length}")
+
+
+
+#Creating a Set
+#You can create a set using curly braces {} or the set() function.
+my_set = {"Kwaku", "man", "yaw", "Crinton", "Obama", "Trump"}
+
+#addition of members
+my_set.add("Richard")
+
+#removal of members
+my_set.remove("man")
+
+print(my_set)  # This will print the updated set
+
+#Set operations
+
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+
+# Union
+union_set = set_a | set_b  # {1, 2, 3, 4, 5}
+union_set = set_a.union(set_b)  # {1, 2, 3, 4, 5}
+
+print(f"the union set of a and b is: {union_set}")
+
+# Intersection
+intersection_set = set_a & set_b  # {3}
+intersection_set = set_a.intersection(set_b)  # {3}
+
+print(f"the intersection set of a and b is: {intersection_set}")
+
+
+# Difference
+difference_set = set_a - set_b  # {1, 2}
+difference_set = set_a.difference(set_b)  # {1, 2}
+
+print(f"the difference in set of a and b is: {difference_set}")
+
+
+# Symmetric Difference
+sym_diff_set = set_a ^ set_b  # {1, 2, 4, 5}
+sym_diff_set = set_a.symmetric_difference(set_b)  # {1, 2, 4, 5}
+
+print(f"the symmetric difference in set of a and b is: {sym_diff_set}")
+
+
