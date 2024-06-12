@@ -33,4 +33,12 @@ substring = my_string[0:5]  # 'Hello'
 for char in my_string:
     print(char)
 
+#range
+my_range = range(5, 20)
 
+selected_range = my_range[2:6]
+preffered_number = my_range[8] *2
+print(selected_range)
+print(preffered_number)
+for item in my_range:
+   print(item)
