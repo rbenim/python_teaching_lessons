@@ -12,8 +12,8 @@ my_list = [1, 2, 3, 4, 5, "and", 6]
 sort_list = my_list.sort
 
 #modification
-modified_list_item = my_list[2] = "two"
-print(modified_list_item)
+my_list[2] = "two"
+print(my_list)
 
 #turple. this turple can not be modified
 my_turple = (1, 2, 3, 4, 5, "and", 6)
