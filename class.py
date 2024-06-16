@@ -95,6 +95,43 @@ for new_app in applicants:
 
 
 
+# Car Informations:
+
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_description(self):
+        return f"{self.year} {self.make} {self.model}"
+
+    def read_odometer(self):
+        print(f"This car has {self.odometer_reading} miles on it.")
+
+    def update_odometer(self, mileage):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles):
+        self.odometer_reading += miles
+
+# Creating an instance of Car
+my_car = Car("Toyota", "Corolla", 2020)
+print(my_car.get_description())  # Output: 2020 Toyota Corolla
+
+my_car.update_odometer(500)
+my_car.read_odometer()           # Output: This car has 500 miles on it.
+
+my_car.increment_odometer(100)
+my_car.read_odometer()           # Output: This car has 600 miles on it.
+
+
+
+
 
 
 
